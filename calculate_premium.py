@@ -32,7 +32,7 @@ def calc_premium(metal, dollar_amount, amount_of_metal, unit):
 
 
 def main():
-    parser = argparse.ArgumentParser(description="Get the value of a specified amount of metal.")
+    parser = argparse.ArgumentParser(description="Get the premium of a specified amount of metal.")
     parser.add_argument("metal", choices = ["gold", "silver", "platinum"], help="The type of metal (gold, silver, platinum)")
     parser.add_argument("dollars", type=float, help="The dollar amount of the selected metal in ounces (e.g., 25.67, .25, 1000, etc)")
     parser.add_argument("amount_of_metal", type=float, help="The amount of metal (e.g., 1, .25, 20, etc)")
